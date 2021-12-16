@@ -88,14 +88,14 @@ namespace XIVComboExpandedestPlugin.Combos
             {
                 if (IsEnabled(CustomComboPreset.DarkDeliriumFeature))
                 {
-                    if (level >= DRK.Levels.Quietus && level >= DRK.Levels.Delirium)
+                    if (level >= DRK.Levels.Quietus && level >= DRK.Levels.Delirium && HasEffect(DRK.Buffs.Delirium))
                         return DRK.Quietus;
                 }
 
                 var gauge = GetJobGauge<DRKGauge>();
                 if (IsEnabled(CustomComboPreset.DRKOvercapFeature))
                 {
-                    if (gauge.Blood >= 90 && HasEffect(DRK.Buffs.BloodWeapon))
+                    if (gauge.Blood >= 50)
                         return DRK.Quietus;
                 }
 
