@@ -88,7 +88,7 @@ namespace XIVComboExpandedestPlugin.Combos
             {
                 if (IsEnabled(CustomComboPreset.DarkDeliriumFeature))
                 {
-                    if (level >= DRK.Levels.Quietus && level >= DRK.Levels.Delirium && HasEffect(DRK.Buffs.Delirium))
+                    if (level >= DRK.Levels.Quietus && level >= DRK.Levels.Delirium)
                         return DRK.Quietus;
                 }
 
