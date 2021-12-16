@@ -190,7 +190,7 @@ namespace XIVComboExpandedestPlugin
         DRKOvercapFeature = 3203,
 
         [OrderedEnum]
-        [CustomComboInfo("Delirium Feature", "Replace Souleater and Stalwart Soul with Bloodspiller and Quietus when Delirium is active.", DRK.JobID, DRK.Souleater, DRK.StalwartSoul)]
+        [CustomComboInfo("Custom Delirium Feature", "Replace Souleater and Stalwart Soul with Bloodspiller and Quietus when Delirium is active.", DRK.JobID, DRK.Souleater, DRK.StalwartSoul)]
         DarkDeliriumFeature = 3204,
 
         #endregion
