@@ -86,16 +86,16 @@ namespace XIVComboExpandedestPlugin.Combos
         {
             if (actionID == DRK.StalwartSoul)
             {
+                var gauge = GetJobGauge<DRKGauge>();
                 if (IsEnabled(CustomComboPreset.DarkDeliriumFeature))
                 {
-                    if (level >= DRK.Levels.Quietus && level >= DRK.Levels.Delirium && HasEffect(DRK.Buffs.Delirium))
+                    if (gauge.Blood >= 50)
                         return DRK.Quietus;
                 }
 
-                var gauge = GetJobGauge<DRKGauge>();
                 if (IsEnabled(CustomComboPreset.DRKOvercapFeature))
                 {
-                    if (gauge.Blood >= 50)
+                    if (gauge.Blood >= 90 && HasEffect(DRK.Buffs.BloodWeapon))
                         return DRK.Quietus;
                 }
 
